@@ -14,4 +14,4 @@
           run: composer install
 
         - name: Run tests
-          run: ./vendor/bin/phpunit
+          run: XDEBUG_MODE=coverage ./vendor/bin/phpunit
