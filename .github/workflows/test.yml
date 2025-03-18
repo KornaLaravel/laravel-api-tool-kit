@@ -19,5 +19,8 @@
         - name: Install dependencies
           run: composer install
 
+        - name: Verify Xdebug installation
+          run: php -m | grep xdebug
+
         - name: Run tests
           run: XDEBUG_MODE=coverage ./vendor/bin/phpunit
